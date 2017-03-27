@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE menu [<!ELEMENT menu (menuGroup*, menuLink*)*>
+
+<!ELEMENT menuGroup (menuGroup*|menuLink+)+>
+<!ELEMENT menuLink (#PCDATA)>
+
+
+<!ATTLIST menuGroup key CDATA #REQUIRED>
+<!ATTLIST menuGroup label CDATA #REQUIRED>
+
+<!ATTLIST menuLink key CDATA #REQUIRED>
+<!ATTLIST menuLink label CDATA #REQUIRED>
+<!ATTLIST menuLink mode CDATA #REQUIRED>
+<!ATTLIST menuLink windowname CDATA #REQUIRED>
+<!ATTLIST menuLink module CDATA #REQUIRED>]><menu>
+<menuGroup key="BankCustomerTest_GUI" label="BankCustomerTest_GUI">
+    <menuLink label="custDetails"  key="BankCustomerTest_GUI.CustDetails" windowname="CustDetails" module="BankCustomerTest_GUI"  mode="DEFAULT"/>
+    <menuLink label="DMErrorScreen"  key="BankCustomerTest_GUI.DMErrorScreen" windowname="DMErrorScreen" module="BankCustomerTest_GUI"  mode="DEFAULT"/>
+    <menuLink label="SearchScreen"  key="BankCustomerTest_GUI.SearchScreen" windowname="SearchScreen" module="BankCustomerTest_GUI"  mode="DEFAULT"/>
+</menuGroup >
+</menu>
