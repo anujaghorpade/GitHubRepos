@@ -8,6 +8,6 @@ RUN mkdir  /EnterpriseAppsMaker && \
  chmod 777 /EnterpriseAppsMaker/logs && \
  chmod 777 /EnterpriseAppsMaker
 # Expose the http, database and administration ports
-EXPOSE 8080 9990
+EXPOSE 8761 9990
 # Specify container startup command
-CMD java -jar /EnterpriseAppsMaker/SemiConductorManagement-1.jar
+CMD java -jar /EnterpriseAppsMaker/Restful.jar
