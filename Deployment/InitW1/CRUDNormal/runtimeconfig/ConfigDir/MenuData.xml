@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE menu [<!ELEMENT menu (menuGroup*, menuLink*)*>
+
+<!ELEMENT menuGroup (menuGroup*|menuLink+)+>
+<!ELEMENT menuLink (#PCDATA)>
+
+
+<!ATTLIST menuGroup key CDATA #REQUIRED>
+<!ATTLIST menuGroup label CDATA #REQUIRED>
+
+<!ATTLIST menuLink key CDATA #REQUIRED>
+<!ATTLIST menuLink label CDATA #REQUIRED>
+<!ATTLIST menuLink mode CDATA #REQUIRED>
+<!ATTLIST menuLink windowname CDATA #REQUIRED>
+<!ATTLIST menuLink module CDATA #REQUIRED>]><menu>
+<menuGroup key="CRUDNormal_GUI" label="CRUDNormal_GUI">
+    <menuLink label="EGridaacrudaddressaa"  key="CRUDNormal_GUI.EGridaacrudaddressaa" windowname="EGridaacrudaddressaa" module="CRUDNormal_GUI"  mode="DEFAULT"/>
+    <menuLink label="EGridaacrudbasicaa"  key="CRUDNormal_GUI.EGridaacrudbasicaa" windowname="EGridaacrudbasicaa" module="CRUDNormal_GUI"  mode="DEFAULT"/>
+    <menuLink label="Create  aacrudaddressaa"  key="CRUDNormal_GUI.EditMCaacrudaddressaa" windowname="EditMCaacrudaddressaa" module="CRUDNormal_GUI"  mode="DEFAULT"/>
+    <menuLink label="Create  aacrudbasicaa"  key="CRUDNormal_GUI.EditMCaacrudbasicaa" windowname="EditMCaacrudbasicaa" module="CRUDNormal_GUI"  mode="DEFAULT"/>
+    <menuLink label="SearchMCaacrudaddressaa"  key="CRUDNormal_GUI.SearchMCaacrudaddressaa" windowname="SearchMCaacrudaddressaa" module="CRUDNormal_GUI"  mode="DEFAULT"/>
+    <menuLink label="SearchMCaacrudbasicaa"  key="CRUDNormal_GUI.SearchMCaacrudbasicaa" windowname="SearchMCaacrudbasicaa" module="CRUDNormal_GUI"  mode="DEFAULT"/>
+</menuGroup >
+</menu>

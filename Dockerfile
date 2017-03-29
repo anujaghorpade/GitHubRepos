@@ -3,10 +3,10 @@ FROM tcseamdocker/wildfly-9.0.1.final
 MAINTAINER Enterprise AppsMaker masterCraft.support@tcs.com
 USER root
 # Copy config files
-COPY Deployment/InitW1/BankCustomerTest/appserver/standalone-full.xml /opt/jboss/wildfly/standalone/configuration
-COPY Deployment/InitW1/BankCustomerTest/scripts/startservers.sh /home
+COPY Deployment/InitW1/CRUDNormal/appserver/standalone-full.xml /opt/jboss/wildfly/standalone/configuration
+COPY Deployment/InitW1/CRUDNormal/scripts/startservers.sh /home
 # Create necessary directories and set permissions
-ADD Deployment/InitW1/BankCustomerTest/runtimeconfig/ConfigDir /home/ConfigDir
+ADD Deployment/InitW1/CRUDNormal/runtimeconfig/ConfigDir /home/ConfigDir
 RUN chmod 555 /home/startservers.sh && \
  chmod 777 /home/ConfigDir && \
  mkdir  /home/logs && \
