@@ -10,4 +10,4 @@ RUN mkdir  /EnterpriseAppsMaker && \
 # Expose the http, database and administration ports
 EXPOSE 8761 9990
 # Specify container startup command
-CMD java -jar /EnterpriseAppsMaker/TestR.jar
+CMD java -jar /EnterpriseAppsMaker/TestRest.jar
