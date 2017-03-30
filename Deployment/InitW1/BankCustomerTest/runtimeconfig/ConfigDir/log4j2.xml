@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
   <Appenders>
-    <File name="file" fileName="C:\\\\Temp\\TempEAR_MC.log" append="false">
+    <File name="file" fileName="C:\\\\Temp\\BankCustomerTest_MC.log" append="false">
       <PatternLayout pattern="%d{ABSOLUTE} %5p %c{10}:%L - %m%n"/>
     </File>
     <Console name="stdout">
