@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <File name="file" fileName="/home/logs/TestComp12_MC.log" append="false">
+      <PatternLayout pattern="%d{ABSOLUTE} %5p %c{10}:%L - %m%n"/>
+    </File>
+    <Console name="stdout">
+      <PatternLayout pattern="%d{ABSOLUTE} %5p %c{10}:%L - %m%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+   <Root level="debug">
+      <AppenderRef ref="file"/>
+    </Root>
+    <logger name="com.tcs" level="debug" additivity="false">
+      <AppenderRef ref="file"/>
+    </logger>
+	<logger name="com.tcs.gui.arch.reflect" level="error" additivity="false">
+      <AppenderRef ref="file"/>
+    </logger>
+	<logger name="com.googlecode.scopeplugin" level="debug" additivity="false">
+      <AppenderRef ref="file"/>
+    </logger>   
+  </Loggers>
+</Configuration>
