@@ -2,8 +2,6 @@
 FROM tcseamdocker/wildfly-9.0.1.final
 MAINTAINER Enterprise AppsMaker masterCraft.support@tcs.com
 USER root
-# Copy EAM generated deployable
-COPY Deployment/InitW1/TestComp12/appserver/TestComp12.ear /opt/jboss/wildfly/standalone/deployments
 # Copy config files
 COPY Deployment/InitW1/TestComp12/appserver/standalone-full.xml /opt/jboss/wildfly/standalone/configuration
 COPY Deployment/InitW1/TestComp12/scripts/startservers.sh /home
