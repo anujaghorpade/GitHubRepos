@@ -99,7 +99,7 @@
                 <formatter>
                     <pattern-formatter pattern="%d{HH:mm:ss,SSS} %-5p [%c] %s%E%n"/>
                 </formatter>
-                <file path="/home/logs/stRest_MC.log"/> 
+                <file path="/home/logs/TestRest_MC.log"/> 
                 <suffix value=".yyyy-MM-dd"/>
             </periodic-rotating-file-handler>
             <logger category="com.arjuna">
